@@ -4,14 +4,9 @@
   <chunksize width="20" height="16"/>
  </editorsettings>
  <properties>
-  <property name="128Kenabled" type="bool" value="true"/>
   <property name="ammo" type="int" value="10"/>
   <property name="animatePeriodMain" type="int" value="1"/>
   <property name="animatePeriodTile" type="int" value="10"/>
-  <property name="backgroundAttribute" type="int" value="7"/>
-  <property name="borderColorItem" type="int" value="1"/>
-  <property name="borderColorKey" type="int" value="2"/>
-  <property name="borderColorLife" type="int" value="3"/>
   <property name="bulletDistance" type="int" value="0"/>
   <property name="damageAmount" type="int" value="10"/>
   <property name="dashEnabled" type="bool" value="true"/>
@@ -29,20 +24,14 @@
   <property name="itemsCountdown" type="bool" value="true"/>
   <property name="itemsEnabled" type="bool" value="true"/>
   <property name="itemsToOpenDoors" type="int" value="0"/>
-  <property name="jumpType" propertytype="jumpType" value="accelerated"/>
   <property name="keysEnabled" type="bool" value="true"/>
   <property name="killJumpingOnTop" type="bool" value="true"/>
   <property name="laddersEnabled" type="bool" value="true"/>
   <property name="lifeAmount" type="int" value="5"/>
-  <property name="mainCharacterExtraFrame" type="bool" value="true"/>
   <property name="mainCharacterInvincible" type="bool" value="false"/>
-  <property name="maxAnimatedTilesPerScreen" type="int" value="10"/>
   <property name="maxEnemiesPerScreen" type="int" value="5"/>
   <property name="messagesEnabled" type="bool" value="false"/>
   <property name="messagesFlashEnabled" type="bool" value="false"/>
-  <property name="musicEnabled" type="bool" value="true"/>
-  <property name="newBeeperPlayer" type="bool" value="true"/>
-  <property name="redefineKeysEnabled" type="bool" value="true"/>
   <property name="shooting" type="bool" value="true"/>
   <property name="shouldKillEnemies" type="bool" value="true"/>
   <property name="swordEnabled" type="bool" value="false"/>

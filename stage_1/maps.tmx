@@ -1,27 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.12.0" class="ZXSpectrumGameMaker" orientation="orthogonal" renderorder="left-down" width="132" height="116" tilewidth="8" tileheight="8" infinite="1" nextlayerid="3" nextobjectid="80">
+<map version="1.10" tiledversion="1.12.2" class="ZXSpectrumGameMaker" orientation="orthogonal" renderorder="left-down" width="132" height="116" tilewidth="8" tileheight="8" infinite="1" nextlayerid="3" nextobjectid="80">
  <editorsettings>
   <chunksize width="32" height="22"/>
  </editorsettings>
  <properties>
-  <property name="128Kenabled" type="bool" value="true"/>
   <property name="ammo" type="int" value="10"/>
-  <property name="animatePeriodMain" type="int" value="1"/>
+  <property name="ammoIncrement" type="int" value="10"/>
   <property name="animatePeriodTile" type="int" value="10"/>
-  <property name="backgroundAttribute" type="int" value="7"/>
-  <property name="borderColorItem" type="int" value="1"/>
-  <property name="borderColorKey" type="int" value="2"/>
-  <property name="borderColorLife" type="int" value="3"/>
+  <property name="arcadeHurryUpSeconds" type="int" value="0"/>
+  <property name="arcadeMode" type="bool" value="false"/>
+  <property name="arcadeModeFirstScreen" type="int" value="0"/>
+  <property name="arcadeModeResetOnKill" type="bool" value="false"/>
+  <property name="arcadeModeUseSpriteId" type="int" value="0"/>
+  <property name="arcadeResetAmmoOnScreenClear" type="bool" value="false"/>
+  <property name="arcadeShowBigIntermediateTitle" type="bool" value="false"/>
+  <property name="arcadeShowIntermediateScreen" type="bool" value="true"/>
   <property name="bulletDistance" type="int" value="0"/>
+  <property name="currentStageEnabled" type="bool" value="false"/>
   <property name="damageAmount" type="int" value="10"/>
+  <property name="dashAlwaysAvailable" type="bool" value="false"/>
   <property name="dashEnabled" type="bool" value="true"/>
   <property name="disableContinuousJump" type="bool" value="true"/>
   <property name="enemiesRespawn" type="bool" value="true"/>
   <property name="enemyShootEnabled" type="bool" value="true"/>
   <property name="enemyShootSolidCollide" type="bool" value="false"/>
+  <property name="enemyStoppedShouldLookAtPlayer" type="bool" value="false"/>
   <property name="finishGameEnemy" type="object" value="19"/>
   <property name="finishGameObjective" propertytype="objectiveType" value="itemsAndKillEnemy"/>
   <property name="gameName" value="Game Name"/>
+  <property name="gameView" propertytype="gameView" value="side"/>
   <property name="goalItems" type="int" value="4"/>
   <property name="hiScore" type="bool" value="false"/>
   <property name="idleTime" type="int" value="30"/>
@@ -29,62 +36,37 @@
   <property name="itemsCountdown" type="bool" value="true"/>
   <property name="itemsEnabled" type="bool" value="true"/>
   <property name="itemsToOpenDoors" type="int" value="0"/>
-  <property name="jumpType" propertytype="jumpType" value="accelerated"/>
+  <property name="jetPackFuel" type="int" value="0"/>
   <property name="keysEnabled" type="bool" value="true"/>
   <property name="killJumpingOnTop" type="bool" value="true"/>
   <property name="laddersEnabled" type="bool" value="true"/>
   <property name="lifeAmount" type="int" value="5"/>
-  <property name="mainCharacterExtraFrame" type="bool" value="true"/>
+  <property name="livesMode" propertytype="livesMode" value="disabled"/>
   <property name="mainCharacterInvincible" type="bool" value="false"/>
-  <property name="maxAnimatedTilesPerScreen" type="int" value="10"/>
   <property name="maxEnemiesPerScreen" type="int" value="5"/>
+  <property name="messagesDefaultInk" type="int" value="0"/>
+  <property name="messagesDefaultPaper" type="int" value="7"/>
   <property name="messagesEnabled" type="bool" value="false"/>
   <property name="messagesFlashEnabled" type="bool" value="false"/>
-  <property name="musicEnabled" type="bool" value="true"/>
-  <property name="newBeeperPlayer" type="bool" value="true"/>
-  <property name="redefineKeysEnabled" type="bool" value="true"/>
+  <property name="platformMimicEnabled" type="bool" value="false"/>
   <property name="shooting" type="bool" value="true"/>
   <property name="shouldKillEnemies" type="bool" value="true"/>
+  <property name="showIdleMessage" type="bool" value="false"/>
+  <property name="spriteCollisionPixelPerfect" type="bool" value="false"/>
   <property name="swordEnabled" type="bool" value="false"/>
+  <property name="swordKillEnemy" type="bool" value="true"/>
   <property name="textsEnabled" type="bool" value="false"/>
+  <property name="textsInk" type="int" value="0"/>
+  <property name="textsPaper" type="int" value="7"/>
+  <property name="textsWindowHeight" type="int" value="12"/>
+  <property name="textsWindowWidth" type="int" value="28"/>
+  <property name="textsWindowX" type="int" value="2"/>
+  <property name="textsWindowY" type="int" value="4"/>
   <property name="timerSeconds" type="int" value="0"/>
   <property name="useBreakableTile" propertytype="breakableTilesMode" value="individual"/>
   <property name="useBreakableTileByTouch" type="bool" value="true"/>
+  <property name="useBreakableTileByTouchFrames" type="int" value="30"/>
   <property name="wallJumpEnabled" type="bool" value="true"/>
-  <property name="jetPackFuel" type="int" value="0"/>
-   <property name="ammoIncrement" type="int" value="10"/>
-   <property name="arcadeHurryUpSeconds" type="int" value="0"/>
-   <property name="arcadeMode" type="bool" value="false"/>
-   <property name="arcadeModeFirstScreen" type="int" value="0"/>
-   <property name="arcadeModeResetOnKill" type="bool" value="false"/>
-   <property name="arcadeModeUseSpriteId" type="int" value="0"/>
-   <property name="arcadeResetAmmoOnScreenClear" type="bool" value="false"/>
-   <property name="arcadeShowBigIntermediateTitle" type="bool" value="false"/>
-   <property name="arcadeShowIntermediateScreen" type="bool" value="true"/>
-   <property name="border" value="0"/>
-   <property name="controlledGameSpeed" type="bool" value="false"/>
-   <property name="currentStageEnabled" type="bool" value="false"/>
-   <property name="dashAlwaysAvailable" type="bool" value="false"/>
-   <property name="enemyStoppedShouldLookAtPlayer" type="bool" value="false"/>
-   <property name="gameView" propertytype="gameView" value="side"/>
-   <property name="ink" value="7"/>
-   <property name="livesMode" propertytype="livesMode" value="disabled"/>
-   <property name="messagesDefaultInk" type="int" value="0"/>
-   <property name="messagesDefaultPaper" type="int" value="7"/>
-   <property name="paper" value="0"/>
-   <property name="password" value=""/>
-   <property name="platformMimicEnabled" type="bool" value="false"/>
-   <property name="showIdleMessage" type="bool" value="false"/>
-   <property name="spriteCollisionPixelPerfect" type="bool" value="false"/>
-   <property name="swordKillEnemy" type="bool" value="true"/>
-   <property name="textsInk" type="int" value="0"/>
-   <property name="textsPaper" type="int" value="7"/>
-   <property name="textsWindowHeight" type="int" value="12"/>
-   <property name="textsWindowWidth" type="int" value="28"/>
-   <property name="textsWindowX" type="int" value="2"/>
-   <property name="textsWindowY" type="int" value="4"/>
-   <property name="useBreakableTileByTouchFrames" type="int" value="30"/>
-   <property name="waitPressKeyAfterLoad" type="bool" value="false"/>
  </properties>
  <tileset firstgid="1" name="tiles" tilewidth="8" tileheight="8" tilecount="192" columns="32">
   <image source="tiles.png" width="256" height="48"/>

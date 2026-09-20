@@ -1,0 +1,610 @@
+[
+    {
+        "id": 7,
+        "name": "breakableTilesMode",
+        "storageType": "string",
+        "type": "enum",
+        "values": [
+            "disabled",
+            "all",
+            "individual"
+        ],
+        "valuesAsFlags": false
+    },
+    {
+        "id": 6,
+        "name": "enemyMovementTypes",
+        "storageType": "string",
+        "type": "enum",
+        "values": [
+            "default",
+            "defaultWithShot",
+            "rectangular",
+            "rectangularWithShot",
+            "stalker",
+            "stalkerWithShot",
+            "noReturn"
+        ],
+        "valuesAsFlags": false
+    },
+    {
+        "id": 3,
+        "name": "enemySpeed",
+        "storageType": "int",
+        "type": "enum",
+        "values": [
+            "0",
+            "1",
+            "2",
+            "3"
+        ],
+        "valuesAsFlags": false
+    },
+    {
+        "id": 1,
+        "name": "gameView",
+        "storageType": "string",
+        "type": "enum",
+        "values": [
+            "side",
+            "overhead"
+        ],
+        "valuesAsFlags": false
+    },
+    {
+        "id": 4,
+        "name": "jumpType",
+        "storageType": "string",
+        "type": "enum",
+        "values": [
+            "constant",
+            "accelerated"
+        ],
+        "valuesAsFlags": false
+    },
+    {
+        "id": 5,
+        "name": "livesMode",
+        "storageType": "string",
+        "type": "enum",
+        "values": [
+            "disabled",
+            "instant respawn",
+            "show graveyard"
+        ],
+        "valuesAsFlags": false
+    },
+    {
+        "color": "#ffa0a0a4",
+        "drawFill": true,
+        "id": 12,
+        "members": [
+        ],
+        "name": "mainCharacter",
+        "type": "class",
+        "useAs": [
+            "property",
+            "map",
+            "layer",
+            "object",
+            "tile",
+            "tileset",
+            "wangcolor",
+            "wangset",
+            "project"
+        ]
+    },
+    {
+        "color": "#ffa0a0a4",
+        "drawFill": true,
+        "id": 13,
+        "members": [
+        ],
+        "name": "music1",
+        "type": "class",
+        "useAs": [
+            "property",
+            "map",
+            "layer",
+            "object",
+            "tile",
+            "tileset",
+            "wangcolor",
+            "wangset",
+            "project"
+        ]
+    },
+    {
+        "color": "#ffa0a0a4",
+        "drawFill": true,
+        "id": 14,
+        "members": [
+        ],
+        "name": "music2",
+        "type": "class",
+        "useAs": [
+            "property",
+            "map",
+            "layer",
+            "object",
+            "tile",
+            "tileset",
+            "wangcolor",
+            "wangset",
+            "project"
+        ]
+    },
+    {
+        "color": "#ffa0a0a4",
+        "drawFill": true,
+        "id": 15,
+        "members": [
+        ],
+        "name": "music3",
+        "type": "class",
+        "useAs": [
+            "property",
+            "map",
+            "layer",
+            "object",
+            "tile",
+            "tileset",
+            "wangcolor",
+            "wangset",
+            "project"
+        ]
+    },
+    {
+        "id": 8,
+        "name": "objectiveType",
+        "storageType": "string",
+        "type": "enum",
+        "values": [
+            "items",
+            "killSpecificEnemy",
+            "itemsAndKillEnemy"
+        ],
+        "valuesAsFlags": false
+    },
+    {
+        "color": "#ffa0a0a4",
+        "drawFill": true,
+        "id": 16,
+        "members": [
+        ],
+        "name": "platform",
+        "type": "class",
+        "useAs": [
+            "property",
+            "map",
+            "layer",
+            "object",
+            "tile",
+            "tileset",
+            "wangcolor",
+            "wangset",
+            "project"
+        ]
+    },
+    {
+        "color": "#ffa0a0a4",
+        "drawFill": true,
+        "id": 9,
+        "members": [
+            {
+                "name": "freezeOnSight",
+                "type": "bool",
+                "value": false
+            },
+            {
+                "name": "life",
+                "type": "int",
+                "value": 1
+            },
+            {
+                "name": "move",
+                "propertyType": "enemyMovementTypes",
+                "type": "string",
+                "value": "default"
+            },
+            {
+                "name": "speed",
+                "propertyType": "enemySpeed",
+                "type": "int",
+                "value": 3
+            }
+        ],
+        "name": "ZXSGMEnemy",
+        "type": "class",
+        "useAs": [
+            "property",
+            "object",
+            "project"
+        ]
+    },
+    {
+        "color": "#ffa0a0a4",
+        "drawFill": true,
+        "id": 11,
+        "members": [
+            {
+                "name": "sprite",
+                "type": "object",
+                "value": 0
+            }
+        ],
+        "name": "ZXSGMPointer",
+        "type": "class",
+        "useAs": [
+            "property",
+            "object"
+        ]
+    },
+    {
+        "color": "#ffa0a0a4",
+        "drawFill": true,
+        "id": 19,
+        "members": [
+            {
+                "name": "default",
+                "type": "string",
+                "value": ""
+            },
+            {
+                "name": "es",
+                "type": "string",
+                "value": ""
+            },
+            {
+                "name": "pt",
+                "type": "string",
+                "value": ""
+            }
+        ],
+        "name": "ZXSGMText",
+        "type": "class",
+        "useAs": [
+            "property",
+            "map",
+            "layer",
+            "object",
+            "tile",
+            "tileset",
+            "wangcolor",
+            "wangset",
+            "project"
+        ]
+    },
+    {
+        "color": "#ffa0a0a4",
+        "drawFill": true,
+        "id": 2,
+        "members": [
+            {
+                "name": "ammo",
+                "type": "int",
+                "value": -1
+            },
+            {
+                "name": "ammoIncrement",
+                "type": "int",
+                "value": 10
+            },
+            {
+                "name": "animatePeriodTile",
+                "type": "int",
+                "value": 10
+            },
+            {
+                "name": "arcadeHurryUpSeconds",
+                "type": "int",
+                "value": 0
+            },
+            {
+                "name": "arcadeMode",
+                "type": "bool",
+                "value": false
+            },
+            {
+                "name": "arcadeModeFirstScreen",
+                "type": "int",
+                "value": 0
+            },
+            {
+                "name": "arcadeModeResetOnKill",
+                "type": "bool",
+                "value": false
+            },
+            {
+                "name": "arcadeModeUseSpriteId",
+                "type": "int",
+                "value": 0
+            },
+            {
+                "name": "arcadeResetAmmoOnScreenClear",
+                "type": "bool",
+                "value": false
+            },
+            {
+                "name": "arcadeShowBigIntermediateTitle",
+                "type": "bool",
+                "value": false
+            },
+            {
+                "name": "arcadeShowIntermediateScreen",
+                "type": "bool",
+                "value": true
+            },
+            {
+                "name": "bulletDistance",
+                "type": "int",
+                "value": 0
+            },
+            {
+                "name": "currentStageEnabled",
+                "type": "bool",
+                "value": false
+            },
+            {
+                "name": "damageAmount",
+                "type": "int",
+                "value": 10
+            },
+            {
+                "name": "dashAlwaysAvailable",
+                "type": "bool",
+                "value": false
+            },
+            {
+                "name": "dashEnabled",
+                "type": "bool",
+                "value": false
+            },
+            {
+                "name": "disableContinuousJump",
+                "type": "bool",
+                "value": false
+            },
+            {
+                "name": "enemiesRespawn",
+                "type": "bool",
+                "value": true
+            },
+            {
+                "name": "enemyShootEnabled",
+                "type": "bool",
+                "value": false
+            },
+            {
+                "name": "enemyShootSolidCollide",
+                "type": "bool",
+                "value": false
+            },
+            {
+                "name": "enemyStoppedShouldLookAtPlayer",
+                "type": "bool",
+                "value": false
+            },
+            {
+                "name": "finishGameEnemy",
+                "type": "object",
+                "value": 0
+            },
+            {
+                "name": "finishGameObjective",
+                "propertyType": "objectiveType",
+                "type": "string",
+                "value": "items"
+            },
+            {
+                "name": "gameName",
+                "type": "string",
+                "value": "Game Name"
+            },
+            {
+                "name": "gameView",
+                "propertyType": "gameView",
+                "type": "string",
+                "value": "side"
+            },
+            {
+                "name": "goalItems",
+                "type": "int",
+                "value": 2
+            },
+            {
+                "name": "hiScore",
+                "type": "bool",
+                "value": false
+            },
+            {
+                "name": "idleTime",
+                "type": "int",
+                "value": 0
+            },
+            {
+                "name": "initialLife",
+                "type": "int",
+                "value": 50
+            },
+            {
+                "name": "itemsCountdown",
+                "type": "bool",
+                "value": false
+            },
+            {
+                "name": "itemsEnabled",
+                "type": "bool",
+                "value": true
+            },
+            {
+                "name": "itemsToOpenDoors",
+                "type": "int",
+                "value": 0
+            },
+            {
+                "name": "jetPackFuel",
+                "type": "int",
+                "value": 0
+            },
+            {
+                "name": "keysEnabled",
+                "type": "bool",
+                "value": true
+            },
+            {
+                "name": "killJumpingOnTop",
+                "type": "bool",
+                "value": false
+            },
+            {
+                "name": "laddersEnabled",
+                "type": "bool",
+                "value": true
+            },
+            {
+                "name": "lifeAmount",
+                "type": "int",
+                "value": 5
+            },
+            {
+                "name": "livesMode",
+                "propertyType": "livesMode",
+                "type": "string",
+                "value": "disabled"
+            },
+            {
+                "name": "mainCharacterInvincible",
+                "type": "bool",
+                "value": false
+            },
+            {
+                "name": "maxEnemiesPerScreen",
+                "type": "int",
+                "value": 5
+            },
+            {
+                "name": "messagesDefaultInk",
+                "type": "int",
+                "value": 0
+            },
+            {
+                "name": "messagesDefaultPaper",
+                "type": "int",
+                "value": 7
+            },
+            {
+                "name": "messagesEnabled",
+                "type": "bool",
+                "value": false
+            },
+            {
+                "name": "messagesFlashEnabled",
+                "type": "bool",
+                "value": true
+            },
+            {
+                "name": "platformMimicEnabled",
+                "type": "bool",
+                "value": false
+            },
+            {
+                "name": "shooting",
+                "type": "bool",
+                "value": true
+            },
+            {
+                "name": "shouldKillEnemies",
+                "type": "bool",
+                "value": false
+            },
+            {
+                "name": "showIdleMessage",
+                "type": "bool",
+                "value": false
+            },
+            {
+                "name": "spriteCollisionPixelPerfect",
+                "type": "bool",
+                "value": false
+            },
+            {
+                "name": "swordEnabled",
+                "type": "bool",
+                "value": false
+            },
+            {
+                "name": "swordKillEnemy",
+                "type": "bool",
+                "value": true
+            },
+            {
+                "name": "textsEnabled",
+                "type": "bool",
+                "value": false
+            },
+            {
+                "name": "textsInk",
+                "type": "int",
+                "value": 0
+            },
+            {
+                "name": "textsPaper",
+                "type": "int",
+                "value": 7
+            },
+            {
+                "name": "textsWindowHeight",
+                "type": "int",
+                "value": 12
+            },
+            {
+                "name": "textsWindowWidth",
+                "type": "int",
+                "value": 28
+            },
+            {
+                "name": "textsWindowX",
+                "type": "int",
+                "value": 2
+            },
+            {
+                "name": "textsWindowY",
+                "type": "int",
+                "value": 4
+            },
+            {
+                "name": "timerSeconds",
+                "type": "int",
+                "value": 0
+            },
+            {
+                "name": "useBreakableTile",
+                "propertyType": "breakableTilesMode",
+                "type": "string",
+                "value": "disabled"
+            },
+            {
+                "name": "useBreakableTileByTouch",
+                "type": "bool",
+                "value": false
+            },
+            {
+                "name": "useBreakableTileByTouchFrames",
+                "type": "int",
+                "value": 30
+            },
+            {
+                "name": "wallJumpEnabled",
+                "type": "bool",
+                "value": false
+            }
+        ],
+        "name": "ZXSpectrumGameMaker",
+        "type": "class",
+        "useAs": [
+            "map",
+            "project"
+        ]
+    }
+]

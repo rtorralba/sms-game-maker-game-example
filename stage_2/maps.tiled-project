@@ -3,7 +3,7 @@
     "commands": [
     ],
     "compatibilityVersion": 1100,
-    "extensionsPath": "../../src/scripts/tiled",
+    "extensionsPath": "../lib",
     "folders": [
         "."
     ],
@@ -292,11 +292,6 @@
             "id": 2,
             "members": [
                 {
-                    "name": "128Kenabled",
-                    "type": "bool",
-                    "value": false
-                },
-                {
                     "name": "ammo",
                     "type": "int",
                     "value": -1
@@ -305,16 +300,6 @@
                     "name": "ammoIncrement",
                     "type": "int",
                     "value": 10
-                },
-                {
-                    "name": "animatePeriodEnemy",
-                    "type": "int",
-                    "value": 3
-                },
-                {
-                    "name": "animatePeriodMain",
-                    "type": "int",
-                    "value": 3
                 },
                 {
                     "name": "animatePeriodTile",
@@ -362,39 +347,9 @@
                     "value": true
                 },
                 {
-                    "name": "backgroundAttribute",
-                    "type": "int",
-                    "value": 7
-                },
-                {
-                    "name": "border",
-                    "type": "string",
-                    "value": "0"
-                },
-                {
-                    "name": "borderColorItem",
-                    "type": "int",
-                    "value": 0
-                },
-                {
-                    "name": "borderColorKey",
-                    "type": "int",
-                    "value": 0
-                },
-                {
-                    "name": "borderColorLife",
-                    "type": "int",
-                    "value": 0
-                },
-                {
                     "name": "bulletDistance",
                     "type": "int",
                     "value": 0
-                },
-                {
-                    "name": "controlledGameSpeed",
-                    "type": "bool",
-                    "value": false
                 },
                 {
                     "name": "currentStageEnabled",
@@ -484,11 +439,6 @@
                     "value": 50
                 },
                 {
-                    "name": "ink",
-                    "type": "string",
-                    "value": "7"
-                },
-                {
                     "name": "itemsCountdown",
                     "type": "bool",
                     "value": false
@@ -507,12 +457,6 @@
                     "name": "jetPackFuel",
                     "type": "int",
                     "value": 0
-                },
-                {
-                    "name": "jumpType",
-                    "propertyType": "jumpType",
-                    "type": "string",
-                    "value": "accelerated"
                 },
                 {
                     "name": "keysEnabled",
@@ -541,19 +485,9 @@
                     "value": "disabled"
                 },
                 {
-                    "name": "mainCharacterExtraFrame",
-                    "type": "bool",
-                    "value": true
-                },
-                {
                     "name": "mainCharacterInvincible",
                     "type": "bool",
                     "value": false
-                },
-                {
-                    "name": "maxAnimatedTilesPerScreen",
-                    "type": "int",
-                    "value": 6
                 },
                 {
                     "name": "maxEnemiesPerScreen",
@@ -581,32 +515,7 @@
                     "value": true
                 },
                 {
-                    "name": "musicEnabled",
-                    "type": "bool",
-                    "value": false
-                },
-                {
-                    "name": "newBeeperPlayer",
-                    "type": "bool",
-                    "value": true
-                },
-                {
-                    "name": "paper",
-                    "type": "string",
-                    "value": "0"
-                },
-                {
-                    "name": "password",
-                    "type": "string",
-                    "value": ""
-                },
-                {
                     "name": "platformMimicEnabled",
-                    "type": "bool",
-                    "value": false
-                },
-                {
-                    "name": "redefineKeysEnabled",
                     "type": "bool",
                     "value": false
                 },
@@ -695,11 +604,6 @@
                     "name": "useBreakableTileByTouchFrames",
                     "type": "int",
                     "value": 30
-                },
-                {
-                    "name": "waitPressKeyAfterLoad",
-                    "type": "bool",
-                    "value": false
                 },
                 {
                     "name": "wallJumpEnabled",
