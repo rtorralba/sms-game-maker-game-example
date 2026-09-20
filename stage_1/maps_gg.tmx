@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.12.2" class="ZXSpectrumGameMaker" orientation="orthogonal" renderorder="left-down" width="132" height="116" tilewidth="8" tileheight="8" infinite="1" nextlayerid="3" nextobjectid="81">
+ <editorsettings>
+  <chunksize width="20" height="16"/>
+ </editorsettings>
+ <properties>
+  <property name="128Kenabled" type="bool" value="true"/>
+  <property name="ammo" type="int" value="10"/>
+  <property name="animatePeriodMain" type="int" value="1"/>
+  <property name="animatePeriodTile" type="int" value="10"/>
+  <property name="backgroundAttribute" type="int" value="7"/>
+  <property name="borderColorItem" type="int" value="1"/>
+  <property name="borderColorKey" type="int" value="2"/>
+  <property name="borderColorLife" type="int" value="3"/>
+  <property name="bulletDistance" type="int" value="0"/>
+  <property name="damageAmount" type="int" value="10"/>
+  <property name="dashEnabled" type="bool" value="true"/>
+  <property name="disableContinuousJump" type="bool" value="true"/>
+  <property name="enemiesRespawn" type="bool" value="true"/>
+  <property name="enemyShootEnabled" type="bool" value="true"/>
+  <property name="enemyShootSolidCollide" type="bool" value="false"/>
+  <property name="finishGameEnemy" type="object" value="19"/>
+  <property name="finishGameObjective" propertytype="objectiveType" value="itemsAndKillEnemy"/>
+  <property name="gameName" value="Game Name"/>
+  <property name="goalItems" type="int" value="4"/>
+  <property name="hiScore" type="bool" value="false"/>
+  <property name="idleTime" type="int" value="30"/>
+  <property name="initialLife" type="int" value="50"/>
+  <property name="itemsCountdown" type="bool" value="true"/>
+  <property name="itemsEnabled" type="bool" value="true"/>
+  <property name="itemsToOpenDoors" type="int" value="0"/>
+  <property name="jumpType" propertytype="jumpType" value="accelerated"/>
+  <property name="keysEnabled" type="bool" value="true"/>
+  <property name="killJumpingOnTop" type="bool" value="true"/>
+  <property name="laddersEnabled" type="bool" value="true"/>
+  <property name="lifeAmount" type="int" value="5"/>
+  <property name="mainCharacterExtraFrame" type="bool" value="true"/>
+  <property name="mainCharacterInvincible" type="bool" value="false"/>
+  <property name="maxAnimatedTilesPerScreen" type="int" value="10"/>
+  <property name="maxEnemiesPerScreen" type="int" value="5"/>
+  <property name="messagesEnabled" type="bool" value="false"/>
+  <property name="messagesFlashEnabled" type="bool" value="false"/>
+  <property name="musicEnabled" type="bool" value="true"/>
+  <property name="newBeeperPlayer" type="bool" value="true"/>
+  <property name="redefineKeysEnabled" type="bool" value="true"/>
+  <property name="shooting" type="bool" value="true"/>
+  <property name="shouldKillEnemies" type="bool" value="true"/>
+  <property name="swordEnabled" type="bool" value="false"/>
+  <property name="textsEnabled" type="bool" value="false"/>
+  <property name="timerSeconds" type="int" value="0"/>
+  <property name="useBreakableTile" propertytype="breakableTilesMode" value="individual"/>
+  <property name="useBreakableTileByTouch" type="bool" value="true"/>
+  <property name="wallJumpEnabled" type="bool" value="true"/>
+ </properties>
+ <tileset firstgid="1" name="tiles" tilewidth="8" tileheight="8" tilecount="192" columns="32">
+  <image source="tiles.png" width="256" height="48"/>
+  <tile id="96" type="animated"/>
+  <tile id="98" type="animated"/>
+  <tile id="128" type="animated-damage"/>
+  <tile id="129" type="damage"/>
+  <tile id="166" type="damage"/>
+  <tile id="187" type="ammo"/>
+  <tile id="189" type="life"/>
+  <tile id="190" type="item"/>
+  <tile id="191" type="key"/>
+ </tileset>
+ <tileset firstgid="193" name="sprites" tilewidth="16" tileheight="16" tilecount="48" columns="16" objectalignment="topleft">
+  <image source="sprites.png" width="256" height="48"/>
+ </tileset>
+ <layer id="1" name="map" width="132" height="116">
+  <data encoding="csv">
+   <chunk x="0" y="0" width="20" height="16">
+3,3,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,
+3,3,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,
+3,3,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,
+3,3,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,
+3,3,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,
+3,3,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,
+3,3,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,
+3,3,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,
+3,3,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,
+3,3,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,
+3,3,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,
+3,3,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,
+3,3,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,
+3,3,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,
+3,3,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
+</chunk>
+   <chunk x="20" y="0" width="20" height="16">
+3,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,3,
+3,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,3,
+3,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,3,
+3,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,3,
+3,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,3,
+3,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,3,
+3,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,3,
+3,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,3,
+3,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,3,
+3,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,3,
+3,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,3,
+3,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,3,
+62,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,3,
+62,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,3,
+62,108,108,191,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,3,
+3,3,3,3,3,3,3,3,3,3,3,3,3,108,108,108,108,108,3,3
+</chunk>
+   <chunk x="0" y="16" width="20" height="16">
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,
+3,3,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,
+3,3,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,
+3,3,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,
+3,3,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,
+3,3,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,
+3,3,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,
+3,3,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,
+3,3,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,191,108,3,
+3,3,192,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,3,3,
+3,3,3,3,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,
+3,3,108,108,108,108,108,108,108,108,108,108,108,108,191,108,108,108,108,3,
+3,3,108,108,108,108,108,108,108,108,108,108,108,108,3,3,108,108,108,63,
+3,3,108,191,108,189,108,108,108,108,108,108,108,108,108,108,108,108,108,63,
+4,4,4,4,4,4,4,4,167,168,167,168,167,168,4,4,4,4,4,4,
+36,36,36,36,36,36,36,36,36,36,36,36,36,36,36,36,36,36,36,36
+</chunk>
+   <chunk x="20" y="16" width="20" height="16">
+3,3,3,3,3,3,3,3,3,3,3,3,3,108,108,108,108,108,3,3,
+3,108,108,108,108,108,108,108,108,108,108,3,3,108,108,108,108,108,3,3,
+3,108,108,108,108,108,108,108,108,108,108,108,64,108,108,108,108,108,3,3,
+3,108,108,108,108,108,108,108,108,108,108,108,64,108,108,108,108,108,3,3,
+3,108,108,108,108,108,108,108,108,108,108,108,64,108,108,108,108,108,3,3,
+3,3,3,3,3,3,3,3,108,108,108,108,3,3,3,3,3,3,3,3,
+3,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,3,
+3,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,3,
+3,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,3,
+3,108,108,108,108,108,108,108,3,3,3,108,108,108,108,108,108,108,3,3,
+3,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,3,
+3,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,3,
+108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,3,
+108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,108,3,3,
+4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,
+36,36,36,36,36,36,36,36,36,36,36,36,36,36,36,36,36,36,36,36
+</chunk>
+  </data>
+ </layer>
+ <objectgroup id="2" name="objects">
+  <object id="17" type="ZXSGMEnemy" gid="209" x="168" y="152" width="16" height="16"/>
+  <object id="18" name="enemy_4_end" type="ZXSGMPointer" x="208" y="152">
+   <properties>
+    <property name="sprite" type="object" value="17"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="19" name="enemy_5" type="ZXSGMEnemy" gid="213" x="48" y="104" width="16" height="16"/>
+  <object id="20" type="ZXSGMPointer" x="112" y="104">
+   <properties>
+    <property name="sprite" type="object" value="19"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="79" type="ZXSGMEnemy" gid="209" x="80" y="232" width="16" height="16">
+   <properties>
+    <property name="life" type="int" value="1"/>
+    <property name="move" propertytype="enemyMovementTypes" value="stalker"/>
+   </properties>
+  </object>
+  <object id="80" type="mainCharacter" gid="193" x="128" y="224" width="16" height="16"/>
+ </objectgroup>
+</map>
