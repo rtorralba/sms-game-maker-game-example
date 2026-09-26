@@ -209,13 +209,13 @@
    </properties>
    <point/>
   </object>
-  <object id="43" type="ZXSGMEnemy" gid="215" x="256" y="272" width="16" height="16">
+  <object id="43" type="ZXSGMEnemy" gid="215" x="264" y="272" width="16" height="16">
    <properties>
     <property name="move" propertytype="enemyMovementTypes" value="noReturn"/>
     <property name="speed" type="int" propertytype="enemySpeed" value="1"/>
    </properties>
   </object>
-  <object id="44" type="ZXSGMPointer" x="320" y="224">
+  <object id="44" type="ZXSGMPointer" x="328" y="224">
    <properties>
     <property name="sprite" type="object" value="43"/>
    </properties>
